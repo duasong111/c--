@@ -59,6 +59,7 @@ int main(void)
  }   //但是不执行，也不知道到底是为了啥？？
  printf("想再玩一次吗？<Yes....1/ No....0>:");
  scanf("%d",&retry);
+   getchar();                                   //最重要的就是这一行，当你没有他的时候就会出现报错的。
  }while(retry == 1);
  return 0;
 }
